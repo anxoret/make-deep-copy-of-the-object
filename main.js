@@ -42,17 +42,17 @@ function copyObject(object) {
 };
 
 function copyArray(array) {
-	let newObject = [];
+	let newArray = [];
 	for (let elem of array) {
 		if (isObject(elem)) {
-			newObject.push(copyObject(elem));
+			newArray.push(copyObject(elem));
 		} else if (isArray(elem)) {
-			newObject.push(copyArray(elem));
+			newArray.push(copyArray(elem));
 		} else {
-			newObject.push(elem);
+			newArray.push(elem);
 		}
 	}
-	return newObject;	
+	return newArray;	
 };
 
 
