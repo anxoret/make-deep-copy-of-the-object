@@ -24,8 +24,8 @@ let obj = {
 };
 
 
-const isObject = object => Object.prototype.toString.call(object) == "[object Object]"
-const isArray = object => Object.prototype.toString.call(object) == "[object Array]"
+const isObject = object => Object.prototype.toString.call(object) == "[object Object]";
+const isArray = object => Object.prototype.toString.call(object) == "[object Array]";
 
 function copyObject(object) {
 	let newObject = {};
@@ -39,7 +39,7 @@ function copyObject(object) {
 		}
 	}
 	return newObject;
-}
+};
 
 function copyArray(array) {
 	let newObject = [];
@@ -53,7 +53,7 @@ function copyArray(array) {
 		}
 	}
 	return newObject;	
-}
+};
 
 
 function deepCopy(objectToCopy) {
